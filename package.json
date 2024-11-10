@@ -3,8 +3,13 @@
     "test": "jest"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "standard": "^17.1.2"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
   }
 }
