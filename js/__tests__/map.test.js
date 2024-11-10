@@ -6,12 +6,12 @@
 
 import L from 'leaflet'
 
-describe('Leaflet Map Initialization', () => {
+describe('Akzeptanztest AF1: 2D-Karte toom Zollstock', () => {
   beforeAll(() => {
     document.body.innerHTML = '<div class="flex-grow-1" id="map"></div>'
   })
 
-  test('Leaflet map is displayed correctly', () => {
+  test('Leaflet wird initialisiert und Karte angezeigt', () => {
     require('../map')
 
     // Überprüfe, ob die Leaflet-Karte initialisiert wurde
@@ -19,7 +19,7 @@ describe('Leaflet Map Initialization', () => {
     expect(mapContainer).toBeTruthy()
     expect(mapContainer.classList.contains('leaflet-container')).toBe(true)
 
-    // Überprüfe, ob das Image tatsächlich geladen wird
+    // Überprüfe, ob das Karte tatsächlich geladen wird
     const overlayElement = document.querySelector('.leaflet-image-layer')
     expect(overlayElement).toBeTruthy()
     expect(overlayElement.tagName).toBe('IMG')
