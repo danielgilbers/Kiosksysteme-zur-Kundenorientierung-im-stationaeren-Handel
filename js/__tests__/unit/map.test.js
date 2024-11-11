@@ -6,20 +6,25 @@
 
 import L from 'leaflet'
 
-describe('Akzeptanztest AF1: 2D-Karte toom Zollstock', () => {
+describe('Unittests F1: 2D-Karte toom Zollstock', () => {
   beforeAll(() => {
-    document.body.innerHTML = '<div class="flex-grow-1" id="map"></div>'
+    document.body.innerHTML = `
+    <div class="d-flex flex-column h-100">
+        <!-- Leaflet Map -->
+        <div class="flex-grow-1" id="map"></div>
+    </div>`
+    require('../../map')
   })
 
-  test('Leaflet wird initialisiert und Karte angezeigt', () => {
-    require('../map')
-
-    // Überprüfe, ob die Leaflet-Karte initialisiert wurde
+  test('Leaflet wird initialisiert', () => {
+    // Überprüfe, ob Leaflet initialisiert wurde
     const mapContainer = document.getElementById('map')
     expect(mapContainer).toBeTruthy()
     expect(mapContainer.classList.contains('leaflet-container')).toBe(true)
+  })
 
-    // Überprüfe, ob das Karte tatsächlich geladen wird
+  test('Karte wird angezeigt', () => {
+    // Überprüfe, ob die Karte tatsächlich geladen wird
     const overlayElement = document.querySelector('.leaflet-image-layer')
     expect(overlayElement).toBeTruthy()
     expect(overlayElement.tagName).toBe('IMG')
