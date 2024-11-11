@@ -13,7 +13,7 @@ describe('Akzeptanztest AF1: 2D-Karte toom Zollstock', () => {
         <!-- Leaflet Map -->
         <div class="flex-grow-1" id="map"></div>
     </div>`
-    require('../../map')
+    require('../map')
   })
 
   test('Leaflet wird initialisiert und Karte angezeigt', () => {

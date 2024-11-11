@@ -1,6 +1,8 @@
 /* global L */
 'use strict'
 
+import { searchBar } from './searchBar.js'
+
 function initializeMap () {
 // Map image
   const image = './map/Zollstock-Modell.png'
@@ -10,7 +12,7 @@ function initializeMap () {
 
   // Create map
   const map = L.map('map', {
-    zoomControl: true,
+    zoomControl: false,
     crs: L.CRS.Simple,
     minZoom: 1,
     maxZoom: 3
@@ -20,6 +22,10 @@ function initializeMap () {
   L.imageOverlay(image, bounds).addTo(map)
 
   map.setView([100, 645], 1)
+
+  return map
 }
 
-initializeMap()
+const map = initializeMap()
+
+searchBar(map)
