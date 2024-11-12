@@ -1,0 +1,2255 @@
+[
+  {
+    "artikel": "Gliedermaßstab Holz 2 m",
+    "nan": "1200001",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0006",
+          "4914.01B.0005"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Wasserwaage 60 cm",
+    "nan": "1200002",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0004",
+          "4752.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0008",
+          "4914.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schraubendreher Set 6-tlg.",
+    "nan": "1200003",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0009",
+          "4914.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0005",
+          "4914.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0002",
+          "5832.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Steckdosenleiste 5-fach",
+    "nan": "1200004",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Holzschrauben Sortiment",
+    "nan": "1200005",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0007"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Akkuschrauber 18V",
+    "nan": "1200006",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Holzbearbeitungs-Sägeblatt",
+    "nan": "1200007",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0007"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Metallbohrer Set",
+    "nan": "1200008",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0003",
+          "4914.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0002",
+          "4914.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Hammer 500g",
+    "nan": "1200009",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0004",
+          "4823.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Kabelbinder 100er Pack",
+    "nan": "1200010",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Gipskartondübel Set",
+    "nan": "1200011",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0006",
+          "4823.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0006",
+          "5832.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Winkelverbinder verzinkt",
+    "nan": "1200012",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0006",
+          "4914.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Baufolie transparent",
+    "nan": "1200013",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0005",
+          "4823.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0008",
+          "4823.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schutzbrille klar",
+    "nan": "1200014",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0008",
+          "4914.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Gewebeband 50m",
+    "nan": "1200015",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0004",
+          "4914.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Besen mit Holzstiel",
+    "nan": "1200016",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0004",
+          "4914.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0006",
+          "4752.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0003"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Abdeckplane 4x5m",
+    "nan": "1200017",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0002",
+          "4914.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0004",
+          "4823.01B.0005"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Pinsel-Set 5-tlg.",
+    "nan": "1200018",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Farbschale 20 cm",
+    "nan": "1200019",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0003",
+          "4752.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0002",
+          "4914.01B.0007"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Spachtel 10 cm",
+    "nan": "1200020",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schleifpapier P80",
+    "nan": "1200021",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0001",
+          "4914.01B.0003"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Malerrolle 25 cm",
+    "nan": "1200022",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0002",
+          "4752.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0003"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Wasserpumpenzange 250 mm",
+    "nan": "1200023",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0009",
+          "4752.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0005"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Inbusschlüssel Set",
+    "nan": "1200024",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Torx-Bits 20-tlg.",
+    "nan": "1200025",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0004",
+          "4752.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0006",
+          "4752.01B.0009"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Werkzeugkoffer leer",
+    "nan": "1200026",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0006",
+          "4752.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Heißklebepistole",
+    "nan": "1200027",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0006",
+          "4823.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Trennscheiben für Metall",
+    "nan": "1200028",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0005",
+          "4914.01B.0007"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Drehmomentschlüssel",
+    "nan": "1200029",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0002",
+          "4752.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0001",
+          "4914.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Feinsäge",
+    "nan": "1200030",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0004",
+          "4752.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0008",
+          "4823.01B.0003"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schraubzwingen 4er-Set",
+    "nan": "1200031",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0004",
+          "4914.01B.0005"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Kreissägeblatt 165mm",
+    "nan": "1200032",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0008",
+          "4823.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0003",
+          "5832.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Spannungsprüfer",
+    "nan": "1200033",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0006",
+          "4914.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Flachsteckhülsen",
+    "nan": "1200034",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schutzhandschuhe",
+    "nan": "1200035",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0001",
+          "4914.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Fugenkelle",
+    "nan": "1200036",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0001",
+          "4752.01B.0005"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Mörtelkübel 20L",
+    "nan": "1200037",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0005",
+          "4752.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schlagbohrmaschine",
+    "nan": "1200038",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0006",
+          "4914.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Holzmeißel 3er-Set",
+    "nan": "1200039",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0009",
+          "4823.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schlauchschellen-Set",
+    "nan": "1200040",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0005",
+          "4823.01B.0005"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0007",
+          "4752.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Ratschenschlüssel",
+    "nan": "1200041",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0001",
+          "4914.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0006",
+          "4914.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0002",
+          "4752.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Sechskantschrauben Sortiment",
+    "nan": "1200042",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Gartenhandschuhe",
+    "nan": "1200043",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0009",
+          "5832.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Werkstattlampe",
+    "nan": "1200044",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0009",
+          "4752.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0008",
+          "5832.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Lasur-Pinsel",
+    "nan": "1200045",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schmutzfangmatte",
+    "nan": "1200046",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0008",
+          "4823.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0007",
+          "4914.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Kappsäge",
+    "nan": "1200047",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0002",
+          "4914.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Elektrotacker",
+    "nan": "1200048",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0003",
+          "4823.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0008",
+          "5832.01B.0005"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Zurrgurte 4er-Set",
+    "nan": "1200049",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0009",
+          "5832.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0005"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0008",
+          "4823.01B.0009"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Dachlatten 30x50 mm",
+    "nan": "1200050",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0005",
+          "4752.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0007"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schutzgasschweißdraht",
+    "nan": "1200051",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0006",
+          "4823.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0003",
+          "4752.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schaufel mit Holzstiel",
+    "nan": "1200052",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0005",
+          "4752.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0004",
+          "4823.01B.0009"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Säbelsägeblätter",
+    "nan": "1200053",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0007",
+          "4752.01B.0009"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Bohrmaschinenständer",
+    "nan": "1200054",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0009",
+          "4752.01B.0005"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0001",
+          "5832.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Bit-Set 40-tlg.",
+    "nan": "1200055",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0003",
+          "4752.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0005"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Dachrinnenhalter",
+    "nan": "1200056",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0007",
+          "4914.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "PVC-Isolierband",
+    "nan": "1200057",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Klebefolie 2m",
+    "nan": "1200058",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0001",
+          "4752.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Regenmesser",
+    "nan": "1200059",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0004",
+          "4914.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Holzkitt",
+    "nan": "1200060",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0007",
+          "4823.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0008",
+          "4823.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Aluminiumwinkel",
+    "nan": "1200061",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0002",
+          "4914.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Betonbohrer",
+    "nan": "1200062",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0002",
+          "5832.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Gaslötbrenner",
+    "nan": "1200063",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0007",
+          "4823.01B.0005"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Heißluftfön",
+    "nan": "1200064",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0006",
+          "4752.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0001",
+          "4823.01B.0007"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Ersatzmesser Teppichschneider",
+    "nan": "1200065",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0005",
+          "5832.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Stichsägeblätter",
+    "nan": "1200066",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Akku-Ladegerät",
+    "nan": "1200067",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0006",
+          "5832.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0007",
+          "4914.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Teleskopstange 2m",
+    "nan": "1200068",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0007",
+          "4752.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0001",
+          "4752.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0008"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Sicherheitsstiefel",
+    "nan": "1200069",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0003",
+          "4823.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0003"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Nageleisen",
+    "nan": "1200070",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0008",
+          "4823.01B.0003"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Maurerkelle",
+    "nan": "1200071",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Mörtelspritze",
+    "nan": "1200072",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0005",
+          "5832.01B.0007"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Anreißnadel",
+    "nan": "1200073",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0008",
+          "4914.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0009"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Dübel-Sortiment",
+    "nan": "1200074",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0008",
+          "4752.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0005",
+          "5832.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Werkzeugkiste",
+    "nan": "1200075",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Atemschutzmaske",
+    "nan": "1200076",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0005",
+          "4823.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Rauchmelder",
+    "nan": "1200077",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0007",
+          "4914.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0005"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Gliedermaßstab Holz 2 m #1",
+    "nan": "1200078",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Wasserwaage 60 cm #2",
+    "nan": "1200079",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0009",
+          "4914.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schraubendreher Set 6-tlg. #3",
+    "nan": "1200080",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0007"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Steckdosenleiste 5-fach #4",
+    "nan": "1200081",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0007"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Holzschrauben Sortiment #5",
+    "nan": "1200082",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0001",
+          "4823.01B.0005"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0002",
+          "4752.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Akkuschrauber 18V #6",
+    "nan": "1200083",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0009",
+          "5832.01B.0003"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Holzbearbeitungs-Sägeblatt #7",
+    "nan": "1200084",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0009",
+          "5832.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0003"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Metallbohrer Set #8",
+    "nan": "1200085",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0003",
+          "4823.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Hammer 500g #9",
+    "nan": "1200086",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0003",
+          "4914.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0007",
+          "4914.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Kabelbinder 100er Pack #10",
+    "nan": "1200087",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0003",
+          "4914.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0005"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0003"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Gipskartondübel Set #11",
+    "nan": "1200088",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0009"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Winkelverbinder verzinkt #12",
+    "nan": "1200089",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0006",
+          "4823.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0004"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0002",
+          "5832.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Baufolie transparent #13",
+    "nan": "1200090",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0007",
+          "4823.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0004",
+          "4752.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schutzbrille klar #14",
+    "nan": "1200091",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0008",
+          "5832.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0003",
+          "4752.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Gewebeband 50m #15",
+    "nan": "1200092",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0005"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Besen mit Holzstiel #16",
+    "nan": "1200093",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4823.01B.0008",
+          "5832.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Abdeckplane 4x5m #17",
+    "nan": "1200094",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0001",
+          "4752.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0009",
+          "5832.01B.0006"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Pinsel-Set 5-tlg. #18",
+    "nan": "1200095",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0002"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Farbschale 20 cm #19",
+    "nan": "1200096",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0004",
+          "4914.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0007"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0007"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Spachtel 10 cm #20",
+    "nan": "1200097",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4823.01B.0002",
+          "5832.01B.0002"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4823.01B.0004",
+          "4752.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Schleifpapier P80 #21",
+    "nan": "1200098",
+    "märkte": [
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4752.01B.0008",
+          "5832.01B.0008"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4914.01B.0006"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4914.01B.0006",
+          "4823.01B.0004"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Malerrolle 25 cm #22",
+    "nan": "1200099",
+    "märkte": [
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "4752.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "4914.01B.0002",
+          "4752.01B.0009"
+        ]
+      },
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "5832.01B.0001",
+          "4752.01B.0001"
+        ]
+      }
+    ]
+  },
+  {
+    "artikel": "Wasserpumpenzange 250 mm #23",
+    "nan": "1200100",
+    "märkte": [
+      {
+        "marktnummer": "5821",
+        "bausteine": [
+          "4752.01B.0004",
+          "4914.01B.0003"
+        ]
+      },
+      {
+        "marktnummer": "3464",
+        "bausteine": [
+          "5832.01B.0001"
+        ]
+      },
+      {
+        "marktnummer": "7743",
+        "bausteine": [
+          "5832.01B.0004",
+          "4914.01B.0007"
+        ]
+      }
+    ]
+  }
+]

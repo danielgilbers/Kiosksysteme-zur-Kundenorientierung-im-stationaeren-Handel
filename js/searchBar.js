@@ -34,6 +34,5 @@ export function useSearchBar (e) {
 }
 
 export function sendSearchQuery (query) {
- 
-}
 
+}

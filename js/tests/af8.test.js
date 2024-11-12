@@ -15,8 +15,8 @@ describe('Akzeptanztest AF8: Globale Suchfunktion', () => {
           <!-- Leaflet Map -->
           <div class="flex-grow-1" id="map"></div>
       </div>`
-      map = initializeMap()
-      searchBar(map)
+    map = initializeMap()
+    searchBar(map)
   })
 
   test('Eingabefeld am oberen Rand', () => {
