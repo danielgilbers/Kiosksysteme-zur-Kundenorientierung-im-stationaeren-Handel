@@ -5,6 +5,7 @@
 'use strict'
 
 import L from 'leaflet'
+import { initializeMap } from '../map'
 
 describe('Akzeptanztest AF1: 2D-Karte toom Zollstock', () => {
   beforeAll(() => {
@@ -13,7 +14,7 @@ describe('Akzeptanztest AF1: 2D-Karte toom Zollstock', () => {
         <!-- Leaflet Map -->
         <div class="flex-grow-1" id="map"></div>
     </div>`
-    require('../map')
+    initializeMap()
   })
 
   test('Leaflet wird initialisiert und Karte angezeigt', () => {

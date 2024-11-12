@@ -5,6 +5,8 @@
 'use strict'
 
 import L from 'leaflet'
+import { initializeMap } from '../map'
+import { searchBar } from '../searchBar'
 
 describe('Akzeptanztest AF8: Globale Suchfunktion', () => {
   beforeAll(() => {
@@ -13,7 +15,8 @@ describe('Akzeptanztest AF8: Globale Suchfunktion', () => {
           <!-- Leaflet Map -->
           <div class="flex-grow-1" id="map"></div>
       </div>`
-    require('../map')
+      map = initializeMap()
+      searchBar(map)
   })
 
   test('Eingabefeld am oberen Rand', () => {
