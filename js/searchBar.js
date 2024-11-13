@@ -1,11 +1,12 @@
 'use strict'
 
+import { searchProducts } from './Product.js'
 /**
  * Search bar
  */
 L.Control.Search = L.Control.extend({
   onAdd: function () {
-    this.container = L.DomUtil.create('div', 'rounded-start-5 rounded-end-5 px-3 py-2 position-absolut start-50 translate-middle-x searchBar')
+    this.container = L.DomUtil.create('div', 'rounded-start-5 rounded-end-5 px-3 py-2 position-absolut start-50 translate-middle-x shadow-sm w-75 searchBar')
     this.container.id = 'searchBar'
     this.container.innerHTML =
       '<div class="input-group d-flex" id="searchGroup">' +
@@ -17,7 +18,7 @@ L.Control.Search = L.Control.extend({
   }
 })
 
-export function searchBar (map) {
+export function addSearchBar (map) {
   new L.Control.Search({ position: 'topleft' }).addTo(map)
 
   const searchBarInput = document.getElementById('searchBarInput')
@@ -26,13 +27,32 @@ export function searchBar (map) {
 
 export function useSearchBar (e) {
   const inputValue = searchBarInput.value
-  if (e.key === 'Enter' && inputValue) {
-    sendSearchQuery(inputValue)
-    return inputValue
+  if (inputValue) {
+    if (e.key === 'Enter') {
+      sendSearchQuery(inputValue)
+      return inputValue
+    }
+    expandSearchBar(inputValue)
   }
   return null
 }
 
 export function sendSearchQuery (query) {
 
+}
+
+const searchList = L.DomUtil.create('div', 'list-group list-group-flush pe-3')
+searchList.id = 'searchList'
+
+function expandSearchBar (inputValue) {
+  const searchBar = document.getElementById('searchBar')
+  searchList.innerHTML = '<p class="text-body-secondary m-2 ms-3 fw-semibold text-uppercase">Produkte</p>'
+
+  for (const p of searchProducts(inputValue)) {
+    searchList.innerHTML += '<button type="button" class="list-group-item list-group-item-action" onclick="sendSearchQuery(\'' + p.item.artikel + '\')">' + p.item.artikel + '</button>'
+  }
+
+  if (!document.getElementById('searchList')) {
+    searchBar.appendChild(searchList)
+  }
 }

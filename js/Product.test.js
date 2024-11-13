@@ -4,14 +4,14 @@
 
 'use strict'
 
-import { Product, loadProducts } from './Product'
+import Product, { initializeSearch, loadProducts, searchProducts } from './Product'
 import mockData from '../map/products.json'
 
 global.fetch = jest.fn()
-.mockResolvedValueOnce({
-  json: () => Promise.resolve(mockData)
-})
-.mockRejectedValueOnce(new Error('Async error message'))
+  .mockRejectedValueOnce(new Error('Async error message'))
+  .mockResolvedValue({
+    json: () => Promise.resolve(mockData)
+  })
 
 describe('Unittest F8: Poduktklasse', () => {
   test('Produktklasse Constructor', () => {
@@ -39,14 +39,22 @@ describe('Unittest F8: Poduktklasse', () => {
     expect(product).toMatchObject(testProduct)
   })
 
+  test('Produkt JSON laden Error', async () => {
+    const data = await loadProducts()
+    expect(data).toBeInstanceOf(Error)
+  })
+
   test('Produkt JSON laden', async () => {
     const data = await loadProducts()
     expect(data).toBeInstanceOf(Array)
     expect(data[0]).toBeInstanceOf(Product)
   })
 
-  test('Produkt JSON laden Error', async () => {
+  test('Produktsuche', async () => {
     const data = await loadProducts()
-    expect(data).toBeInstanceOf(Error)
+    const searchQuery = 'Gliedermaßstab'
+    await initializeSearch()
+    const search = await searchProducts(searchQuery)
+    expect(search).toBeInstanceOf(Array)
   })
 })

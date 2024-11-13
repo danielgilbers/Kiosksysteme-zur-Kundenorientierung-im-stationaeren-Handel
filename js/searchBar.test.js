@@ -5,8 +5,18 @@
 'use strict'
 
 import L from 'leaflet'
-import { searchBar, useSearchBar } from './searchBar'
+import { addSearchBar, useSearchBar } from './searchBar'
 import { initializeMap } from './map'
+
+// Mock der Funktion searchProducts
+jest.mock('./Product', () => {
+  return {
+    ...jest.requireActual('./Product'),
+    searchProducts: jest.fn()
+  }
+})
+
+const { searchProducts } = require('./Product')
 
 describe('Unittest F8: Globale Suchfunktion', () => {
   let map
@@ -18,7 +28,11 @@ describe('Unittest F8: Globale Suchfunktion', () => {
           <div class="flex-grow-1" id="map"></div>
       </div>`
     map = initializeMap()
-    searchBar(map)
+    addSearchBar(map)
+  })
+
+  afterEach(() => {
+    jest.clearAllMocks()
   })
 
   test('Eingabefeld am oberen Rand', () => {
@@ -55,5 +69,22 @@ describe('Unittest F8: Globale Suchfunktion', () => {
 
     // Überprüfe, ob sendSearchQuery aufgerufen wurde
     expect(useSearchBar(event)).toBe(null)
+  })
+
+  test('Produktvorschläge nach Suche anzeigen', async () => {
+    searchProducts.mockReturnValue([{ item: { artikel: 'TestProdukt' } }])
+
+    const searchBarInput = document.getElementById('searchBarInput')
+    const testValue = 'a'
+    searchBarInput.value = testValue
+
+    const event = new KeyboardEvent('keyup', { key: testValue })
+
+    expect(document.getElementById('searchList')).toBeFalsy()
+
+    useSearchBar(event)
+
+    expect(searchProducts).toHaveBeenCalledWith(testValue)
+    expect(document.getElementById('searchList')).toBeTruthy()
   })
 })

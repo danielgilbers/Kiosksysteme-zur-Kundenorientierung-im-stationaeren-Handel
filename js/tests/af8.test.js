@@ -6,7 +6,7 @@
 
 import L from 'leaflet'
 import { initializeMap } from '../map'
-import { searchBar } from '../searchBar'
+import { addSearchBar } from '../searchBar'
 
 describe('Akzeptanztest AF8: Globale Suchfunktion', () => {
   beforeAll(() => {
@@ -16,7 +16,7 @@ describe('Akzeptanztest AF8: Globale Suchfunktion', () => {
           <div class="flex-grow-1" id="map"></div>
       </div>`
     map = initializeMap()
-    searchBar(map)
+    addSearchBar(map)
   })
 
   test('Eingabefeld am oberen Rand', () => {

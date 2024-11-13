@@ -4,15 +4,24 @@ body {
 }
 
 .searchBar {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    width: 70%;
     background-color: #fff;
     min-width: 380px;
-    border: none;
+}
+.searchBar:hover, .searchBar:focus-within {
+    box-shadow: 0px 0.125rem 0.25rem rgba(0, 0, 0, 0.2) !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-right: 1.25rem !important;
+    padding-left: 1.25rem !important;
+    width: 76% !important;
 }
 
 .leaflet-left {
     width: 100%;
+}
+
+input {
+    cursor: default !important;
 }
 
 input:focus {
