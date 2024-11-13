@@ -53,7 +53,7 @@ describe('Unittest F8: Poduktklasse', () => {
   test('Produktsuche', async () => {
     const data = await loadProducts()
     const searchQuery = 'Gliedermaßstab'
-    await initializeSearch()
+    await initializeSearch('fuse.js')
     const search = await searchProducts(searchQuery)
     expect(search).toBeInstanceOf(Array)
   })

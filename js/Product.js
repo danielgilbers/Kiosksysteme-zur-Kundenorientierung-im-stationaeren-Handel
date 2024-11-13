@@ -8,7 +8,7 @@ export default class Product {
   }
 }
 
-let Fuse, products, fuse
+let products, fuse
 
 export async function loadProducts () {
   const payload = []
@@ -24,17 +24,8 @@ export async function loadProducts () {
   }
 }
 
-export async function initializeSearch () {
-  if (!Fuse) {
-    // Prüfe, ob Jest verwendet wird
-    if (typeof process !== 'undefined' && process.env.JEST_WORKER_ID !== undefined) {
-      // Lokaler Import für Jest
-      Fuse = (await import('fuse.js')).default
-    } else {
-      // Dynamischer Import für den Browser
-      Fuse = (await import('https://unpkg.com/fuse.js@7.0.0/dist/fuse.basic.min.mjs')).default
-    }
-  }
+export async function initializeSearch (url) {
+  const Fuse = (await import(url)).default
   products = await loadProducts()
   fuse = new Fuse(products, {
     keys: ['artikel'],
