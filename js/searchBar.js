@@ -1,6 +1,9 @@
 'use strict'
 
 import { searchProducts } from './Product.js'
+
+let searchBar
+
 /**
  * Search bar
  */
@@ -20,6 +23,7 @@ L.Control.Search = L.Control.extend({
 
 export function addSearchBar (map) {
   new L.Control.Search({ position: 'topleft' }).addTo(map)
+  searchBar = document.getElementById('searchBar')
 
   const searchBarInput = document.getElementById('searchBarInput')
   searchBarInput.addEventListener('keyup', useSearchBar)
@@ -33,6 +37,8 @@ export function useSearchBar (e) {
       return inputValue
     }
     expandSearchBar(inputValue)
+  } else {
+    resetSearchBar()
   }
   return null
 }
@@ -41,11 +47,16 @@ export function sendSearchQuery (query) {
 
 }
 
+function resetSearchBar () {
+  if (searchBar.contains(searchList)) {
+    searchBar.removeChild(searchList)
+  }
+}
+
 const searchList = L.DomUtil.create('div', 'list-group list-group-flush pe-3')
 searchList.id = 'searchList'
 
 function expandSearchBar (inputValue) {
-  const searchBar = document.getElementById('searchBar')
   searchList.innerHTML = '<p class="text-body-secondary m-2 ms-3 fw-semibold text-uppercase">Produkte</p>'
 
   for (const p of searchProducts(inputValue)) {

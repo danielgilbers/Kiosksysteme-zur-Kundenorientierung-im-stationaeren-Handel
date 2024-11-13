@@ -87,4 +87,22 @@ describe('Unittest F8: Globale Suchfunktion', () => {
     expect(searchProducts).toHaveBeenCalledWith(testValue)
     expect(document.getElementById('searchList')).toBeTruthy()
   })
+
+  test('Suchleiste resetten', () => {
+    searchProducts.mockReturnValue([{ item: { artikel: 'TestProdukt' } }])
+
+    const searchBarInput = document.getElementById('searchBarInput')
+    const testValue = 'a'
+    searchBarInput.value = testValue
+    let event = new KeyboardEvent('keyup', { key: testValue })
+    useSearchBar(event)
+
+    expect(document.getElementById('searchList')).toBeTruthy()
+
+    searchBarInput.value = ''
+    event = new KeyboardEvent('keyup', { key: 'Backspace' })
+    useSearchBar(event)
+
+    expect(document.getElementById('searchList')).toBeFalsy()
+  })
 })
