@@ -14,13 +14,21 @@ export async function loadProducts () {
   const payload = []
 
   try {
-    const response = await fetch('./map/products.json')
-    const jsonFeature = await response.json()
-    jsonFeature.forEach((element) => payload.push(new Product(element)))
+    const JSON = await loadJSON('./map/products.json')
+    JSON.forEach((element) => payload.push(new Product(element)))
     return payload
   } catch (error) {
     console.error('Fehler beim Laden der Produkte:', error)
     return error
+  }
+}
+
+async function loadJSON (path) {
+  try {
+    const response = await fetch(path)
+    return await response.json()
+  } catch (error) {
+    throw error
   }
 }
 
