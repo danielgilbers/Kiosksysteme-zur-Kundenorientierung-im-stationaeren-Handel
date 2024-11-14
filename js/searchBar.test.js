@@ -46,6 +46,7 @@ describe('Unittest F8: Globale Suchfunktion', () => {
   })
 
   test('Validierung einer gültigen Eingabe', () => {
+    searchProducts.mockReturnValue([{ item: { artikel: 'TestProdukt' } }])
     const searchBarInput = document.getElementById('searchBarInput')
     const testValue = 'Hammer'
 
@@ -104,5 +105,21 @@ describe('Unittest F8: Globale Suchfunktion', () => {
     useSearchBar(event)
 
     expect(document.getElementById('searchList')).toBeFalsy()
+  })
+
+  test('Fehlerbenachrichtigung', () => {
+    searchProducts.mockReturnValue([])
+
+    const searchBarInput = document.getElementById('searchBarInput')
+    const testValue = 'a'
+    searchBarInput.value = testValue
+    let event = new KeyboardEvent('keyup', { key: testValue })
+    useSearchBar(event)
+
+    expect(document.getElementById('searchList')).toBeTruthy()
+    expect(document.getElementById('noProductNotification')).toBeTruthy()
+
+    event = new KeyboardEvent('keyup', { key: 'Enter' })
+    useSearchBar(event)
   })
 })

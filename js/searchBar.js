@@ -1,3 +1,4 @@
+/* global L */
 'use strict'
 
 import { searchProducts } from './Product.js'
@@ -27,6 +28,11 @@ export function addSearchBar (map) {
 
   const searchBarInput = document.getElementById('searchBarInput')
   searchBarInput.addEventListener('keyup', useSearchBar)
+
+  searchBar.addEventListener('click', function (e) { e.stopPropagation() })
+  searchBar.addEventListener('dblclick', function (e) { e.stopPropagation() })
+  searchBar.addEventListener('mousedown', function (e) { e.stopPropagation() })
+  searchBar.addEventListener('touchstart', function (e) { e.stopPropagation() })
 }
 
 export function useSearchBar (e) {
@@ -43,8 +49,13 @@ export function useSearchBar (e) {
   return null
 }
 
-export function sendSearchQuery (query) {
-
+export function sendSearchQuery (inputValue) {
+  if (searchProducts(inputValue).length === 0) {
+    searchList.innerHTML = '<p class="text-body-secondary m-2 ms-3 fw-semibold" id="noProductNotification">Leider finden wir keine Ergebnisse für deinen Suchbegriff!!!</p>'
+  }
+  if (!document.getElementById('searchList')) {
+    searchBar.appendChild(searchList)
+  }
 }
 
 function resetSearchBar () {
@@ -57,10 +68,14 @@ const searchList = L.DomUtil.create('div', 'list-group list-group-flush pe-3')
 searchList.id = 'searchList'
 
 function expandSearchBar (inputValue) {
-  searchList.innerHTML = '<p class="text-body-secondary m-2 ms-3 fw-semibold text-uppercase">Produkte</p>'
+  if (searchProducts(inputValue).length === 0) {
+    searchList.innerHTML = '<p class="text-body-secondary m-2 ms-3 fw-semibold" id="noProductNotification">Leider finden wir keine Ergebnisse für deinen Suchbegriff.</p>'
+  } else {
+    searchList.innerHTML = '<p class="text-body-secondary m-2 ms-3 fw-semibold text-uppercase">Produkte</p>'
 
-  for (const p of searchProducts(inputValue)) {
-    searchList.innerHTML += '<button type="button" class="list-group-item list-group-item-action" onclick="sendSearchQuery(\'' + p.item.artikel + '\')">' + p.item.artikel + '</button>'
+    for (const p of searchProducts(inputValue)) {
+      searchList.innerHTML += '<button type="button" class="list-group-item list-group-item-action" onclick="sendSearchQuery(\'' + p.item.artikel + '\')">' + p.item.artikel + '</button>'
+    }
   }
 
   if (!document.getElementById('searchList')) {
