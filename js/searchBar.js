@@ -35,8 +35,8 @@ export function addSearchBar (thisMap) {
 
   searchBar.addEventListener('click', function (e) { e.stopPropagation() })
   searchBar.addEventListener('dblclick', function (e) { e.stopPropagation() })
-  searchBar.addEventListener('mousedown', function (e) { e.stopPropagation() })
-  searchBar.addEventListener('touchstart', function (e) { e.stopPropagation() })
+  searchBar.addEventListener('mousedown', function (e) { e.stopPropagation() }, {passive: true})
+  searchBar.addEventListener('touchstart', function (e) { e.stopPropagation() }, {passive: true})
 }
 
 export function useSearchBar (e) {
