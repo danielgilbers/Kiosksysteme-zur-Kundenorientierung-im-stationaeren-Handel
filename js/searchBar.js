@@ -57,11 +57,9 @@ export function sendSearchQuery (inputValue) {
     resetSearchBar()
     const firstItem = searchResult[0].item
     searchBarInput.value = firstItem.artikel
-    console.log(findPosition(firstItem))
     const marker = new L.marker(findPosition(firstItem))
     marker.id = 'productMarker'
     marker.addTo(map)
-    console.log(marker)
   }
 }
 

@@ -5,7 +5,7 @@
 'use strict'
 
 import L from 'leaflet'
-import { addSearchBar, useSearchBar } from './searchBar'
+import { addSearchBar, useSearchBar, sendSearchQuery } from './searchBar'
 import { initializeMap } from './map'
 import mockProducts from '../map/products.json'
 import mockBausteine from '../map/bausteine.json'
@@ -38,21 +38,6 @@ describe('Unittest F8: Globale Suchfunktion', () => {
     map = initializeMap()
     await initializeSearch('fuse.js')
     addSearchBar(map)
-    /*
-    searchProducts.mockReturnValue([{
-      item: {
-        artikel: 'Gliedermaßstab Holz 2 m',
-        nan: '1200001',
-        märkte: [
-          {
-            marktnummer: '3464',
-            bausteine: [
-              '5832.01B.0006'
-            ]
-          }
-        ]
-      }
-    }]) */
   })
 
   afterEach(() => {
@@ -93,7 +78,7 @@ describe('Unittest F8: Globale Suchfunktion', () => {
     expect(useSearchBar(event)).toBe(false)
   })
 
-  test('Produktvorschläge nach Suche anzeigen', async () => {
+  test('Produktvorschläge nach Suche anzeigen', () => {
     const searchBarInput = document.getElementById('searchBarInput')
     const testValue = 'a'
     searchBarInput.value = testValue
@@ -137,5 +122,21 @@ describe('Unittest F8: Globale Suchfunktion', () => {
 
     event = new KeyboardEvent('keyup', { key: 'Enter' })
     useSearchBar(event)
+  })
+
+  test('Klick auf Suchergebnis', () => {
+    const searchBarInput = document.getElementById('searchBarInput')
+    const testValue = 'Akk'
+    searchBarInput.value = testValue
+
+    const searchEvent = new KeyboardEvent('keyup', { key: 'u' })
+
+    useSearchBar(searchEvent)
+
+    const productMarker = document.getElementsByClassName('leaflet-marker-icon')
+    expect(productMarker[0]).toBeFalsy()
+
+    document.getElementById('searchList').children[1].click()
+    expect(productMarker[0]).toBeTruthy()
   })
 })

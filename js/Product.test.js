@@ -4,11 +4,12 @@
 
 'use strict'
 
-import Product, { initializeSearch, loadProducts, searchProducts } from './Product'
+import Product, { initializeSearch, loadProducts, loadBausteine, searchProducts } from './Product'
 import mockProducts from '../map/products.json'
 import mockBausteine from '../map/bausteine.json'
 
 global.fetch = jest.fn()
+  .mockRejectedValueOnce(new Error('Async error message'))
   .mockRejectedValueOnce(new Error('Async error message'))
   .mockImplementation((url) => {
     if (url.includes('products')) {
@@ -54,10 +55,20 @@ describe('Unittest F8: Poduktklasse', () => {
     expect(data).toBeInstanceOf(Error)
   })
 
+  test('Bausteine JSON laden Error', async () => {
+    const data = await loadBausteine()
+    expect(data).toBeInstanceOf(Error)
+  })
+
   test('Produkt JSON laden', async () => {
     const data = await loadProducts()
     expect(data).toBeInstanceOf(Array)
     expect(data[0]).toBeInstanceOf(Product)
+  })
+
+  test('Baustein JSON laden', async () => {
+    const data = await loadBausteine()
+    expect(data).toBeInstanceOf(Object)
   })
 
   test('Produktsuche', async () => {
