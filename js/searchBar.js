@@ -3,7 +3,7 @@
 
 import { findPosition, searchProducts } from './Product.js'
 
-let map, searchBar
+let map, searchBar, searchBarInput
 
 const searchList = L.DomUtil.create('div', 'list-group list-group-flush pe-3')
 searchList.id = 'searchList'
@@ -30,7 +30,7 @@ export function addSearchBar (thisMap) {
   new L.Control.Search({ position: 'topleft' }).addTo(map)
   searchBar = document.getElementById('searchBar')
 
-  const searchBarInput = document.getElementById('searchBarInput')
+  searchBarInput = document.getElementById('searchBarInput')
   searchBarInput.addEventListener('keyup', useSearchBar)
 
   searchBar.addEventListener('click', function (e) { e.stopPropagation() })
