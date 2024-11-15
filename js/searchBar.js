@@ -1,9 +1,12 @@
 /* global L */
 'use strict'
 
-import { searchProducts } from './Product.js'
+import { findPosition, searchProducts } from './Product.js'
 
-let searchBar
+let map, searchBar
+
+const searchList = L.DomUtil.create('div', 'list-group list-group-flush pe-3')
+searchList.id = 'searchList'
 
 /**
  * Search bar
@@ -22,7 +25,8 @@ L.Control.Search = L.Control.extend({
   }
 })
 
-export function addSearchBar (map) {
+export function addSearchBar (thisMap) {
+  map = thisMap
   new L.Control.Search({ position: 'topleft' }).addTo(map)
   searchBar = document.getElementById('searchBar')
 
@@ -37,24 +41,27 @@ export function addSearchBar (map) {
 
 export function useSearchBar (e) {
   const inputValue = searchBarInput.value
-  if (inputValue) {
-    if (e.key === 'Enter') {
-      sendSearchQuery(inputValue)
-      return inputValue
-    }
-    expandSearchBar(inputValue)
-  } else {
+  if (!inputValue) {
     resetSearchBar()
+    return false
   }
-  return null
+  expandSearchBar(inputValue)
+  if (e.key === 'Enter') {
+    sendSearchQuery(inputValue)
+  }
 }
 
 export function sendSearchQuery (inputValue) {
-  if (searchProducts(inputValue).length === 0) {
-    searchList.innerHTML = '<p class="text-body-secondary m-2 ms-3 fw-semibold" id="noProductNotification">Leider finden wir keine Ergebnisse für deinen Suchbegriff!!!</p>'
-  }
-  if (!document.getElementById('searchList')) {
-    searchBar.appendChild(searchList)
+  const searchResult = searchProducts(inputValue)
+  if (searchResult.length > 0) {
+    resetSearchBar()
+    const firstItem = searchResult[0].item
+    searchBarInput.value = firstItem.artikel
+    console.log(findPosition(firstItem))
+    const marker = new L.marker(findPosition(firstItem))
+    marker.id = 'productMarker'
+    marker.addTo(map)
+    console.log(marker)
   }
 }
 
@@ -64,9 +71,6 @@ function resetSearchBar () {
   }
 }
 
-const searchList = L.DomUtil.create('div', 'list-group list-group-flush pe-3')
-searchList.id = 'searchList'
-
 function expandSearchBar (inputValue) {
   if (searchProducts(inputValue).length === 0) {
     searchList.innerHTML = '<p class="text-body-secondary m-2 ms-3 fw-semibold" id="noProductNotification">Leider finden wir keine Ergebnisse für deinen Suchbegriff.</p>'
@@ -74,11 +78,15 @@ function expandSearchBar (inputValue) {
     searchList.innerHTML = '<p class="text-body-secondary m-2 ms-3 fw-semibold text-uppercase">Produkte</p>'
 
     for (const p of searchProducts(inputValue)) {
-      searchList.innerHTML += '<button type="button" class="list-group-item list-group-item-action" onclick="sendSearchQuery(\'' + p.item.artikel + '\')">' + p.item.artikel + '</button>'
+      searchList.innerHTML += '<button type="button" class="list-group-item list-group-item-action" onclick="search(\'' + p.item.artikel + '\')">' + p.item.artikel + '</button>'
     }
   }
 
   if (!document.getElementById('searchList')) {
     searchBar.appendChild(searchList)
   }
+}
+
+window.search = (query) => {
+  sendSearchQuery(query)
 }
