@@ -5,13 +5,23 @@
 'use strict'
 
 import Product, { initializeSearch, loadProducts, searchProducts } from './Product'
-import mockData from '../map/products.json'
+import mockProducts from '../map/products.json'
+import mockBausteine from '../map/bausteine.json'
 
 global.fetch = jest.fn()
   .mockRejectedValueOnce(new Error('Async error message'))
-  .mockResolvedValue({
-    json: () => Promise.resolve(mockData)
-  })
+  .mockImplementation((url) => {
+    if (url.includes('products')) {
+      return Promise.resolve({
+        json: () => Promise.resolve(mockProducts)
+      })
+    } else if (url.includes('bausteine')) {
+      return Promise.resolve({
+        json: () => Promise.resolve(mockBausteine)
+      })
+    }
+  }
+  )
 
 describe('Unittest F8: Poduktklasse', () => {
   test('Produktklasse Constructor', () => {

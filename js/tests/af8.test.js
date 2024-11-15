@@ -8,24 +8,34 @@ import L from 'leaflet'
 import { initializeMap } from '../map'
 import { addSearchBar } from '../searchBar'
 
-// Mock der Funktion searchProducts
-jest.mock('../Product', () => {
-  return {
-    ...jest.requireActual('../Product'),
-    searchProducts: jest.fn()
-  }
-})
+import mockProducts from '../../map/products.json'
+import mockBausteine from '../../map/bausteine.json'
 
-const { searchProducts } = require('../Product')
+const { initializeSearch } = require('../Product')
+
+global.fetch = jest.fn()
+  .mockImplementation((url) => {
+    if (url.includes('products')) {
+      return Promise.resolve({
+        json: () => Promise.resolve(mockProducts)
+      })
+    } else if (url.includes('bausteine')) {
+      return Promise.resolve({
+        json: () => Promise.resolve(mockBausteine)
+      })
+    }
+  }
+  )
 
 describe('Akzeptanztest AF8: Globale Suchfunktion', () => {
-  beforeAll(() => {
+  beforeAll(async () => {
     document.body.innerHTML = `
       <div class="d-flex flex-column h-100">
           <!-- Leaflet Map -->
           <div class="flex-grow-1" id="map"></div>
       </div>`
     map = initializeMap()
+    await initializeSearch('fuse.js')
     addSearchBar(map)
   })
 
@@ -40,14 +50,21 @@ describe('Akzeptanztest AF8: Globale Suchfunktion', () => {
   })
 
   test('gefundenes Produkt anzeigen', () => {
-    const productMarker = document.getElementById('productMarker')
-    expect(productMarker).toBeTruthy()
+    const productMarker = document.getElementsByClassName('leaflet-marker-icon')
+    expect(productMarker[0]).toBeFalsy()
+
+    const searchBarInput = document.getElementById('searchBarInput')
+    const testValue = 'Akku-Ladegerät'
+    searchBarInput.value = testValue
+    const event = new KeyboardEvent('keyup', { key: 'Enter' })
+    searchBarInput.dispatchEvent(event)
+
+    expect(productMarker[0]).toBeTruthy()
   })
 
   test('kein Produkt gefunden, Fehler anzeigen', () => {
-    searchProducts.mockReturnValue([])
     const searchBarInput = document.getElementById('searchBarInput')
-    const testValue = 'a'
+    const testValue = '?'
     searchBarInput.value = testValue
     const event = new KeyboardEvent('keyup', { key: 'Enter' })
     searchBarInput.dispatchEvent(event)
