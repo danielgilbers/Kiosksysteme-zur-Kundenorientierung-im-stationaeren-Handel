@@ -1,5 +1,7 @@
 'use strict'
 
+import { loadJSON } from './util.js'
+
 export default class Product {
   constructor ({ artikel, nan, märkte }) {
     this.artikel = artikel
@@ -20,7 +22,7 @@ export async function loadProducts () {
     return payload
   } catch (error) {
     console.error('Fehler beim Laden der Produkte:', error)
-    return error
+    throw error
   }
 }
 
@@ -29,15 +31,6 @@ export async function loadBausteine () {
     return await loadJSON('./map/bausteine.json')
   } catch (error) {
     console.error('Fehler beim Laden der Bausteine:', error)
-    return error
-  }
-}
-
-async function loadJSON (path) {
-  try {
-    const response = await fetch(path)
-    return await response.json()
-  } catch (error) {
     throw error
   }
 }
