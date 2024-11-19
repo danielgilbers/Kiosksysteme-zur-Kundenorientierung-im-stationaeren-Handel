@@ -3,7 +3,7 @@
 
 import { findPosition, searchProducts } from './Product.js'
 
-let map, searchBar, searchBarInput
+let map, searchBar, searchBarInput, previousMarker
 
 const searchList = L.DomUtil.create('div', 'list-group list-group-flush pe-3')
 searchList.id = 'searchList'
@@ -57,9 +57,11 @@ export function sendSearchQuery (inputValue) {
     resetSearchBar()
     const firstItem = searchResult[0].item
     searchBarInput.value = firstItem.artikel
-    const marker = new L.marker(findPosition(firstItem))
+    if (previousMarker) {previousMarker.remove()}
+    let marker = new L.marker(findPosition(firstItem))
     marker.id = 'productMarker'
     marker.addTo(map)
+    previousMarker = marker
   }
 }
 

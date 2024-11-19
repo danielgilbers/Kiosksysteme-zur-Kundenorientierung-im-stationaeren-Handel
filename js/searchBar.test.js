@@ -15,7 +15,7 @@ const { initializeSearch } = require('./Product')
 describe('Unittest F8: Globale Suchfunktion', () => {
   let map
 
-  beforeAll(async () => {
+  beforeEach(async () => {
     // Fetch-Mock für Produkte und Bausteine
     global.fetch = jest.fn((url) => {
       if (url.includes('products')) {
@@ -111,7 +111,7 @@ describe('Unittest F8: Globale Suchfunktion', () => {
     expect(document.getElementById('noProductNotification')).toBeTruthy()
   })
 
-  test('Klick auf Suchergebnis', () => {
+  test('Marker anzeigen', () => {
     const searchBarInput = document.getElementById('searchBarInput')
     searchBarInput.value = 'Akk'
     const searchEvent = new KeyboardEvent('keyup', { key: 'u' })
@@ -124,8 +124,38 @@ describe('Unittest F8: Globale Suchfunktion', () => {
     const productMarker = document.getElementsByClassName('leaflet-marker-icon')
     expect(productMarker[0]).toBeFalsy()
 
+    // Klick auf das Suchergebnis simulieren
+    searchList.children[1].click()
+    expect(productMarker[0]).toBeTruthy()
+  })
+
+  test('Alten Marker löschen', () => {
+    const searchBarInput = document.getElementById('searchBarInput')
+    searchBarInput.value = 'Akk'
+    let searchEvent = new KeyboardEvent('keyup', { key: 'u' })
+
+    useSearchBar(searchEvent)
+
+    const searchList = document.getElementById('searchList')
+    expect(searchList).toBeTruthy()
+
+    let productMarker = document.getElementsByClassName('leaflet-marker-icon')
+    expect(productMarker[0]).toBeFalsy()
+
+    // Klick auf das erste Suchergebnis simulieren
+    searchList.children[1].click()
+    expect(productMarker[0]).toBeTruthy()
+
+    const oldProductMarker = {...productMarker}
+
+    searchBarInput.value = 'Ate'
+    searchEvent = new KeyboardEvent('keyup', { key: 'm' })
+
+    useSearchBar(searchEvent)
+
     // Klick auf das zweite Suchergebnis simulieren
     searchList.children[1].click()
     expect(productMarker[0]).toBeTruthy()
+    expect(productMarker[0].style).not.toEqual(oldProductMarker[0].style)
   })
 })
