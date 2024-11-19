@@ -139,14 +139,14 @@ describe('Unittest F8: Globale Suchfunktion', () => {
     const searchList = document.getElementById('searchList')
     expect(searchList).toBeTruthy()
 
-    let productMarker = document.getElementsByClassName('leaflet-marker-icon')
+    const productMarker = document.getElementsByClassName('leaflet-marker-icon')
     expect(productMarker[0]).toBeFalsy()
 
     // Klick auf das erste Suchergebnis simulieren
     searchList.children[1].click()
     expect(productMarker[0]).toBeTruthy()
 
-    const oldProductMarker = {...productMarker}
+    const oldProductMarker = { ...productMarker }
 
     searchBarInput.value = 'Ate'
     searchEvent = new KeyboardEvent('keyup', { key: 'm' })
@@ -157,5 +157,21 @@ describe('Unittest F8: Globale Suchfunktion', () => {
     searchList.children[1].click()
     expect(productMarker[0]).toBeTruthy()
     expect(productMarker[0].style).not.toEqual(oldProductMarker[0].style)
+  })
+
+  test('X Symbol anzeigen und entfernen', () => {
+    const searchBarInput = document.getElementById('searchBarInput')
+    searchBarInput.value = 'a'
+    let event = new KeyboardEvent('keyup', { key: 'a' })
+    useSearchBar(event)
+
+    expect(document.getElementById('clearGroup')).toBeTruthy()
+
+    // Zurücksetzen
+    searchBarInput.value = ''
+    event = new KeyboardEvent('keyup', { key: 'Backspace' })
+    useSearchBar(event)
+
+    expect(document.getElementById('clearGroup')).toBeFalsy()
   })
 })

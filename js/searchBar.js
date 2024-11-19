@@ -3,7 +3,7 @@
 
 import { findPosition, searchProducts } from './Product.js'
 
-let map, searchBar, searchBarInput, previousMarker
+let map, searchBar, searchGroup, searchButton, searchBarInput, previousMarker
 
 const searchList = L.DomUtil.create('div', 'list-group list-group-flush pe-3')
 searchList.id = 'searchList'
@@ -18,12 +18,17 @@ L.Control.Search = L.Control.extend({
     this.container.innerHTML =
       '<div class="input-group d-flex" id="searchGroup">' +
       '<input id="searchBarInput" type="text" class="form-control border-0 p-0" placeholder="Was suchst du?" aria-label="Suchen" aria-describedby="addon-wrapping" autocomplete="off">' +
-      '<svg xmlns="http://www.w3.org/2000/svg" height="22" width="21" viewBox="0 0 20 20" data-testid="main-search-input-search-btn" class="css-1n8vdy0">' +
-      '<path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>' +
+      '<button id="searchButton" class="btn btn-sm lh-1 border-0">' +
+      '<span class="material-symbols-outlined">Search</span>' +
+      '</button>' +
       '</div>'
     return this.container
   }
 })
+
+const clearGoup = L.DomUtil.create('div', 'clearGroup')
+clearGoup.id = 'clearGroup'
+clearGoup.innerHTML = '<button id="clearButton" class="btn btn-sm lh-1 border-0"><span class="material-symbols-outlined mb-sm">Close</span></button><span class="seperator align-middle"></span>'
 
 export function addSearchBar (thisMap) {
   map = thisMap
@@ -33,10 +38,15 @@ export function addSearchBar (thisMap) {
   searchBarInput = document.getElementById('searchBarInput')
   searchBarInput.addEventListener('keyup', useSearchBar)
 
+  searchGroup = document.getElementById('searchGroup')
+
+  searchButton = document.getElementById('searchButton')
+  searchButton.addEventListener('click', function () { sendSearchQuery() })
+
   searchBar.addEventListener('click', function (e) { e.stopPropagation() })
   searchBar.addEventListener('dblclick', function (e) { e.stopPropagation() })
-  searchBar.addEventListener('mousedown', function (e) { e.stopPropagation() }, {passive: true})
-  searchBar.addEventListener('touchstart', function (e) { e.stopPropagation() }, {passive: true})
+  searchBar.addEventListener('mousedown', function (e) { e.stopPropagation() }, { passive: true })
+  searchBar.addEventListener('touchstart', function (e) { e.stopPropagation() }, { passive: true })
 }
 
 export function useSearchBar (e) {
@@ -45,27 +55,47 @@ export function useSearchBar (e) {
     resetSearchBar()
     return false
   }
+  addClearButton()
   expandSearchBar(inputValue)
   if (e.key === 'Enter') {
-    sendSearchQuery(inputValue)
+    sendSearchQuery()
   }
 }
 
-export function sendSearchQuery (inputValue) {
+function addClearButton () {
+  if (!document.getElementById('clearGroup')) {
+    searchGroup.insertBefore(clearGoup, searchButton)
+    document.getElementById('clearButton').addEventListener('click', resetSearchBar)
+  }
+}
+
+export function sendSearchQuery (query) {
+  const inputValue = query ?? searchBarInput.value
   const searchResult = searchProducts(inputValue)
   if (searchResult.length > 0) {
-    resetSearchBar()
+    removeSearchList()
     const firstItem = searchResult[0].item
     searchBarInput.value = firstItem.artikel
-    if (previousMarker) {previousMarker.remove()}
-    let marker = new L.marker(findPosition(firstItem))
+    removeOldMarker()
+    const marker = new L.marker(findPosition(firstItem))
     marker.id = 'productMarker'
     marker.addTo(map)
     previousMarker = marker
   }
 }
 
+function removeOldMarker () {
+  if (previousMarker) { previousMarker.remove() }
+}
+
 function resetSearchBar () {
+  removeSearchList()
+  removeOldMarker()
+  searchBarInput.value = ''
+  if (document.getElementById('clearGroup')) { document.getElementById('clearGroup').remove() }
+}
+
+function removeSearchList () {
   if (searchBar.contains(searchList)) {
     searchBar.removeChild(searchList)
   }
