@@ -8,15 +8,12 @@ import L from 'leaflet'
 import { initializeMap } from '../map'
 
 describe('Akzeptanztest AF1: 2D-Karte toom Zollstock', () => {
-  let mapContainer
-
   beforeAll(() => {
     // HTML-Setup für die Karte
     document.body.innerHTML = `
       <div class="d-flex flex-column h-100">
         <div class="flex-grow-1" id="map"></div>
       </div>`
-    mapContainer = document.getElementById('map')
 
     // Initialisiere die Karte
     initializeMap()
@@ -24,6 +21,7 @@ describe('Akzeptanztest AF1: 2D-Karte toom Zollstock', () => {
 
   test('Leaflet wird initialisiert und Karte angezeigt', () => {
     // Überprüfe, ob das Map-Element existiert
+    const mapContainer = document.getElementById('map')
     expect(mapContainer).toBeTruthy()
     expect(mapContainer.classList.contains('leaflet-container')).toBe(true)
 
