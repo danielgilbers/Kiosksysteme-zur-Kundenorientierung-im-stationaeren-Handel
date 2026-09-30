@@ -5,7 +5,7 @@
   },
   "devDependencies": {
     "@babel/preset-env": "^7.26.0",
-    "babel-jest": "^29.7.0",
+    "babel-jest": "^30.5.2",
     "jest": "^30.5.2",
     "jest-environment-jsdom": "^29.7.0",
     "standard": "^17.1.2"
