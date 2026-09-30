@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "audit": "npm audit --audit-level=low"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.26.0",
